@@ -1,0 +1,114 @@
+@import './result';
+@import './variables';
+
+    .header-top
+    {
+        position: fixed;
+        width: 100%;
+
+        border: 1px solid $color_gray;
+        
+        .header-text
+        {
+            
+            font-size: $extrame_font;
+            text-align: center;
+            font-variant: small-caps;
+            @include font_fam;
+
+            .span-text 
+            {
+                color: $gold;
+                @include font-fam;
+            }
+        }
+        .navbar
+        {
+            background-color: $color_gray;
+            
+            .ullist
+            {
+                
+                .ullist__item
+                {
+                    
+                    width: 100px;
+                    display: inline-flex;
+                    flex-shrink: none;
+                    padding: 1rem;
+                    margin-left: 1rem;
+                    justify-content: start;
+                    align-items: center;
+                    align-content: center;
+                    a
+                    {
+                        
+                            color: aliceblue;
+                            text-decoration: none;
+                            list-style: none;
+                }    }
+            }
+
+                    
+            .ullist__item:hover
+            {
+                
+                width: 100px;
+                display: inline-flex;
+                flex-wrap: wrap;
+                flex-grow: none;
+                flex-shrink: none;
+                padding: 1rem;
+                margin-left: 1rem;
+                justify-content: start;
+                align-items: center;
+                align-content: center;
+                @include transitionease;
+                a
+                {
+                    
+                        color: gold;
+                        text-decoration: none;
+                        list-style: none;
+                }
+            }
+   
+        }
+    }
+
+    .main-body
+    {
+        border: 2px solid $gold;
+        position: absolute;
+        top: 10.9rem;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .img_collaction
+    {
+        width: 250px;
+        height: 350px;
+        margin: 10px;
+        transition: all 1s;
+    }
+    .img_collaction:hover
+    {
+        transform: scale(1.1);
+    }
+
+    .Container_text
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .text_h2
+    {
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 3em;
+        border-bottom: 2px solid rgb(92, 92, 92);
+        width: 100%;
+        margin-bottom: 1em;
+    }

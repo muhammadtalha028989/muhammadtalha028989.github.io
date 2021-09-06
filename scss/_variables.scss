@@ -1,0 +1,11 @@
+$color_gray1: rgb(122, 98, 98);
+$color_gray: rgb(92, 92, 92);
+$extrame_font:12ch;
+$gold:rgb(255, 196, 0);
+@mixin font_fam {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@mixin transitionease
+{
+    transition: all 2s ease-in-out;
+}
